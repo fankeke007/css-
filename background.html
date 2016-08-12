@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>background</title>
+	<link rel="stylesheet" href="background.css">
+</head>
+<body>
+	<div class="part">
+		<p>1.条纹背景(liner-gradient)</p>
+		<pre>background: linear-gradient(#fb3,#58a);</pre>
+		<div class="sample">
+			<div class="test1"></div>	
+		</div>
+		<hr>
+	</div>	
+	<div class="part">
+		<pre>background: linear-gradient(#fb3 50%,#58a 50%);</pre>
+		<div class="sample">
+			<div class="test2"></div>	
+		</div>
+		<hr>
+	</div>	
+	<div class="part">
+		<pre>background: linear-gradient(#fb3 50%,#58a 50%);</pre>
+		<div class="sample">
+			<div class="test3"></div>	
+		</div>
+		<hr>
+	</div>	
+	<div class="part">
+		<pre>background: linear-gradient(#fb3 50%,#58a 50%);</pre>
+		<div class="sample">
+			<div class="test3"></div>	
+		</div>
+		<hr>
+	</div>	
+	<div class="part">
+		<pre>background: linear-gradient(#fb3 80%,#58a 0);</pre>
+		<pre>background-size: 100% 30px;</pre>
+		
+		<div class="sample">
+			<div class="test4"></div>	
+		</div>
+		<p style="color:red">注意此案例中的特性：第一个设为80%，改变第二个色标值为80%、50%、20%、10%、120%试试效果</p>
+		<hr>
+	</div>	
+	<div class="part">
+		<pre>background: linear-gradient(#fb3 33.3%,#58a 0,#58a 66.6%,yellowgreen 0);</pre>
+		<pre>background-size: 100% 30px;</pre>
+		
+		<div class="sample">
+			<div class="test5"></div>	
+		</div>
+		<p style="color:red">产生3条背景色需注意事项，注意css样式设置linear-gadient中的值</p>
+		<hr>
+	</div>	
+	<div class="part">
+		<p>2.垂直条纹</p>
+		<pre>background: linear-gradient(#fb3 33.3%,#58a 0,#58a 66.6%,yellowgreen 0);</pre>
+		<pre>background-size: 30px 100%;</pre>
+		
+		<div class="sample">
+			<div class="test6"></div>	
+		</div>
+		<hr>
+	</div>	
+	<div class="part">
+		<p>2.斜向条纹</p>
+		<pre>background: linear-gradient(45deg,#fb3 50%,#58a 0);</pre>
+		<pre>background-size: 30px 30px;</pre>
+		
+		<div class="sample">
+			<div class="test7"></div>	
+		</div>
+		<p style="color:red">失败：对比下一个</p>
+		<hr>
+	</div>	
+	<div class="part">
+		<pre>background: linear-gradient(45deg,#fb3 50%,#58a 0);</pre>
+		<pre>background-size: 30px 30px;</pre>
+		
+		<div class="sample">
+			<div class="test8"></div>	
+		</div>
+		<p style="color:red">对比上一个</p>
+		<hr>
+	</div>	
+	<div class="part">
+		<pre>background: linear-gradient(60deg,#fb3 50%,#58a 0);</pre>
+		<pre>background-size: 30px 30px;</pre>
+		
+		<div class="sample">
+			<div class="test9"></div>	
+		</div>
+		<p style="color:red">对比上一个,当倾斜角改为60°时，斜条纹失败</p>
+		<hr>
+	</div>	
+	<div class="part">
+		<p>3.repeating-lineat-gradient()/repeating-ridial-gradient()</p>
+		<pre>background: repeating-linear-gradient(45deg,#fb3,#58a 30px);</pre>
+		<div class="sample">
+			<div class="test10"></div>	
+		</div>
+		<hr>
+	</div>	
+	<div class="part">
+		<p>3.repeating-lineat-gradient()/repeating-ridial-gradient()</p>
+		<pre>background: repeating-linear-gradient(60deg,#fb3 15px,#58a 0,#58a 30px);</pre>
+		<div class="sample">
+			<div class="test11"></div>	
+		</div>
+		<hr>
+	</div>	
+	<div class="part">
+		<p>4.桌布效果:使用多个渐变</p>
+		<pre>background:#fff;</pre>
+		<pre>background-image: linear-gradient(rgba(200, 0, 0, 0.5) 50%,transparent 0),</pre>
+		<pre>linear-gradient(90deg,rgba(200, 0, 0, 0.5) 50%,transparent 0);</pre>
+		<pre>background-size: 30px 30px;</pre>
+		<div class="sample">
+			<div class="test12"></div>	
+		</div>
+		<hr>
+	</div>	
+	<div class="part">
+		<p>5.网格</p>
+		<pre>background:#fff;</pre>
+		<pre>background-image: linear-gradient(rgba(200, 0, 0, 0.5) 50%,transparent 0),</pre>
+		<pre>linear-gradient(90deg,rgba(200, 0, 0, 0.5) 50%,transparent 0);</pre>
+		<pre>background-size: 30px 30px;</pre>
+		<div class="sample">
+			<div class="test13"></div>	
+		</div>
+		<hr>
+	</div>	
+	<div class="part">
+		<p>6.网格升级版</p>
+		<pre>background: #58a;</pre>
+		<pre>background-image: linear-gradient(hsla(0,0%,100%,.3) 1px,transparent 0),</pre>
+		<pre>linear-gradient(90deg,hsla(0,0%,100%,.3) 1px,transparent 0),</pre>
+		<pre>linear-gradient(90deg,hsla(0,0%,100%,.3) 1px,transparent 0),</pre>
+		<pre>linear-gradient(#fff 2px,transparent 0),</pre>
+		<pre>linear-gradient(90deg,#fff 2px,transparent 0);</pre>
+		<pre>background-size: 15px 15px,15px 15px,75px 75px,75px 75px;</pre>
+		<div class="sample">
+			<div class="test14"></div>	
+		</div>
+		<hr>
+	</div>	
+	<div class="part">
+		<p>7.圆点阵列</p>
+		<p>radial-gradient可用于光晕效果</p>
+		<pre>background: #655;</pre>
+		<pre>background-image: radial-gradient(tan 30%,transparent 0);</pre>
+		<pre>background-size: 30px 30px;</pre>
+		<div class="sample">
+			<div class="test15"></div>	
+		</div>
+		<hr>
+	</div>	
+	<div class="part">
+		<p>8.波点阵列</p>
+		<pre>background: #655;</pre>
+		<pre>background-size: 15px 15px,15px 15px,75px 75px,75px 75px;</pre>
+		<div class="sample">
+			<div class="test16"></div>	
+		</div>
+		<p style="color:red">注意bg-position</p>
+		<hr>
+	</div>	
+	<div class="part">
+		<p>9.棋盘格？1</p>
+		<pre>background: #655;</pre>
+		<pre>background-size: 15px 15px,15px 15px,75px 75px,75px 75px;</pre>
+		<div class="sample">
+			<div class="test17"></div>	
+		</div>
+		<hr>
+	</div>	
+	<div class="part">
+		<p>conic-gradient角向渐变，暂无浏览区支持</p>
+		<div class="sample">
+			<div class="test18"></div>	
+		</div>
+		<hr>
+	</div>	
+
+</body>
+</html>

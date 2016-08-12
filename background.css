@@ -1,0 +1,120 @@
+pre{
+			color: green;
+		}
+		hr{
+			border-color: #e8e8e8;
+			border-width:1px;
+			border-style:dotted; 
+		}
+		.sample{
+			width: 300px;
+		}
+		.test1{
+			height: 150px;
+			background: linear-gradient(#fb3,#58a);
+		}
+		.test2{
+			height: 150px;
+			background: linear-gradient(#fb3 20%,#58a 80%);
+		}
+		.test3{
+			height: 150px;
+			background: linear-gradient(#fb3 50%,#58a 50%);
+		}
+		.test4{
+			height: 150px;
+			background: linear-gradient(#fb3 30%,#58a 0);
+			background-size: 100% 30px;
+		}
+		.test5{
+			height: 150px;
+			background: linear-gradient(#fb3 33.3%,#58a 0,#58a 66.6%,yellowgreen 0);
+			background-size: 100% 30px;
+		}
+		.test6{
+			height: 150px;
+			background: linear-gradient(90deg,#fb3 33.3%,#58a 0,#58a 66.6%,yellowgreen 0);
+			background-size: 30px 100%;
+		}
+		.test7{
+			height: 150px;
+			background: linear-gradient(45deg,#fb3 50%,#58a 0);
+			background-size: 30px 30px;
+		}
+		.test8{
+			height: 150px;
+			background: linear-gradient(45deg,#fb3 25%,#58a 0,#58a 50%,#fb3 0,#fb3 75%,#58a 0);
+			background-size: 30px 30px;
+		}
+		.test9{
+			height: 150px;
+			background: linear-gradient(60deg,#fb3 25%,#58a 0,#58a 50%,#fb3 0,#fb3 75%,#58a 0);
+			background-size: 30px 30px;
+		}
+		.test10{
+			height: 150px;
+			background: repeating-linear-gradient(45deg,#fb3,#58a 30px);
+			/* -webkit-background-size: 100% 30px;
+			background-size: 30px 30px; */
+		}
+		.test11{
+			height: 150px;
+			background: repeating-linear-gradient(60deg,#fb3,#fb3 15px,#58a 0,#58a 30px);
+			/* -webkit-background-size: 100% 30px;
+			background-size: 30px 30px; */
+		}
+		.test12{
+			height: 150px;
+			background: #fff;
+			background-image: linear-gradient(rgba(200, 0, 0, 0.5) 50%,transparent 0),
+						linear-gradient(90deg,rgba(200, 0, 0, 0.5) 50%,transparent 0);
+			background-size: 30px 30px;
+		}
+		.test13{
+			height: 150px;
+			background: #58a;
+			background-image: linear-gradient(#fff 1px,transparent 0),
+						linear-gradient(90deg,#fff 1px,transparent 0);
+			background-size: 30px 30px;
+		}
+		.test14{
+			height: 150px;
+			background: #58a;
+			background-image: linear-gradient(hsla(0,0%,100%,.3) 1px,transparent 0),
+						linear-gradient(90deg,hsla(0,0%,100%,.3) 1px,transparent 0),
+						linear-gradient(#fff 2px,transparent 0),
+						linear-gradient(90deg,#fff 2px,transparent 0);
+
+			background-size: 15px 15px,15px 15px,75px 75px,75px 75px;
+		}
+		.test15{
+			height: 150px;
+			background: #655;
+			background-image: radial-gradient(tan 30%,transparent 0);
+			background-size: 30px 30px;
+		}
+		.test16{
+			height: 150px;
+			background: #655;
+			background-image: radial-gradient(tan 30%,transparent 0),
+			                  radial-gradient(tan 30%,transparent 0);
+			background-size: 30px 30px;
+			background-position: 0 0,15px 15px;
+		}
+		.test17{
+			height: 150px;
+			background: #eee;
+			background-image: linear-gradient(45deg,rgba(0,0,0,0.25) 25%,transparent 0),
+			                  linear-gradient(45deg,transparent 75%,rgba(0,0,0,0.25) 0),
+			                  linear-gradient(45deg,rgba(0,0,0,0.25) 25%,transparent 0),
+			                  linear-gradient(45deg,transparent 75%,rgba(0,0,0,0.25) 0);
+			background-size: 30px 30px;
+			background-position: 0 0,15px 15px,15px 15px;
+		}
+		.test18{
+			height: 150px;
+			background: #eee;
+			background:conic-gradient(red,yellow,lime,aqua,blue,fuchsia,red);
+			/* background-size: 30px 30px;
+			background-position: 0 0,15px 15px,15px 15px; */
+		}
